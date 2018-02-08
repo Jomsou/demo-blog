@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *, body {
+            margin: 0;
+            padding: 0;
+        }
+        #main, #main-inner, #sub, #extra {
+            height: 400px;
+            min-height: 130px;
+            float: left;
+        }
+        #sub {
+            width: 200px;
+            margin-left: -100%;
+            background: red;
+        }
+        #extra {
+            width: 220px;
+            margin-left: -220px;
+            background: orange;
+        }
+        #main {
+            width: 100%;
+            background: green;
+        }
+        #main-inner {
+            margin-left: 200px;
+            margin-right: 220px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="main-inner">
+
+        </div>
+    </div>
+    <div id="sub"></div>
+    <div id="extra"></div>
+</body>
+</html>

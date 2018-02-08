@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1 div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+        .active {
+            background: orange;
+        }
+    </style>
+    <script>
+            class tab {
+                constructor(id) {
+                   var oDiv = document.getElementById(id);
+                    this.aBtn = oDiv.getElementsByTagName('input');
+                    this.aDiv = oDiv.getElementsByTagName('div');
+
+                    var _this = this;
+                    for (var i = 0; i < this.aBtn.length; i++) {
+                        this.aBtn[i].index = i;
+                        this.aBtn[i].addEventListener('click', function () {
+                            _this.tabSwitch(this);
+                        }, false)
+                    } 
+                }
+                tabSwitch(oBtn) {
+                    for (var i = 0; i < this.aBtn.length; i++) {
+                        this.aBtn[i].className = '';
+                        this.aDiv[i].style.display = 'none';
+                    }
+                    oBtn.className = 'active';
+                    this.aDiv[oBtn.index].style.display = 'block';
+                }    
+            }
+            window.onload = function (){
+                new tab('div1');
+            }
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <input type="button" value="出国" class="active">
+        <input type="button" value="留学">
+        <input type="button" value="旅游">
+        <div style='display: block'>123</div>
+        <div>456</div>
+        <div>789</div>
+    </div> 
+</body>
+</html>
