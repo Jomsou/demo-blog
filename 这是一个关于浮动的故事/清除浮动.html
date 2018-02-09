@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 100%;
+            background: #ccc;
+        }
+        #box1, #box2 {
+            float: left;
+        }
+        #box1 {
+            width: 50px;
+            height: 100px;
+            background: red;
+        }
+        #box2 {
+            width: 50px;
+            height: 100px;
+            background: orange;
+        }
+        .clearfix:after{
+            content: '';
+            display: table;
+            clear: both;
+            height: 0;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="clearfix">
+        <div id="box1"></div>
+        <div id="box2"></div> 
+        11111111
+    </div>
+</body>
+</html>
