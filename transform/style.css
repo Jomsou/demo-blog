@@ -14,18 +14,24 @@ body {
 .pic {
     width: 160px;
 }
+/*鼠标滑过图片*/
+
 .container>img:hover {
     box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
+    /*图片摆正，同时放大1.2倍。*/
     transform: rotate(0deg) scale(1.2);
+    /*考虑到兼容性，chrome--webkit内核*/
     -webkit-transform: rotate(0deg) scale(1.2);
     z-index: 2;
-    /* 若是图片之间有重合部分，滑过的图片完整地显示在最上层。 */
+    /*若是图片之间有重合部分，滑过的图片完整地显示在最上层。*/
 }
+
 .container>img {
     padding: 10px 10px 15px;
     border: 1px solid #ddd;
     background: white;
     box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
+    /*以下考虑到兼容性，webkit内核、moz内核*/
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
