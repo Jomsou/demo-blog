@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eeeeee;
+}
+.container {
+    width: 960px;
+    height: 450px;
+    margin: 60px auto;
+    position: relative;
+}
+.pic {
+    width: 160px;
+}
+.container>img:hover {
+    box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
+    transform: rotate(0deg) scale(1.2);
+    -webkit-transform: rotate(0deg) scale(1.2);
+    z-index: 2;
+    /* 若是图片之间有重合部分，滑过的图片完整地显示在最上层。 */
+}
+.container>img {
+    padding: 10px 10px 15px;
+    border: 1px solid #ddd;
+    background: white;
+    box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    position: absolute;
+    z-index: 1;
+}
+.pic1 {
+    left: 400px;
+    top: 0;
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+}
+.pic2 {
+    left: 200px;
+    top: 0;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+}
+.pic3 {
+    bottom: 100px;
+    right: 100px;
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+}
+.pic4 {
+    bottom: 50px;
+    left: 450px;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+
+.pic5 {
+    bottom: 0;
+    top: 0;
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+}
+
+.pic6 {
+    bottom: 300px;
+    right: 100px;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+.pic7 {
+    left: 850px;
+    top: 0;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+}
+
+.pic8 {
+    bottom: 150px;
+    left: 200px;
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+}
+
+.pic9 {
+    left: 550px;
+    top: 90px;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+}
