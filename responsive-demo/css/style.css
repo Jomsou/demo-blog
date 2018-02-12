@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-01-14 14:56:40
+ * @version $Id$
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+}
+
+body:after {
+    content: '';
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #eeeeee;
+    display: block;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+    line-height: 0;
+}
+
+.header {
+    width: 100%;
+    height: 56px;
+    background: #ED1E79;
+    position: relative;
+}
+
+.header-content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.header-content .logo {
+    width: 20%;
+    color: #eeeeee;
+    font-size: 20px;
+    line-height: 56px;
+    float: left;
+}
+
+.header-content .nav {
+    width: 80%;
+    height: 56px;
+    float: left;
+}
+
+.header-content .nav ul li {
+    width: 20%;
+    float: left;
+    color: #eeeeee;
+    line-height: 56px;
+}
+
+.header-content #btn1 {
+    display: none;
+}
+
+.header-content>.hide {
+    display: none;
+}
+
+.main {
+    width: 100%;
+}
+
+.main-up {
+    width: 80%;
+    margin: 60px auto;
+}
+
+.main-up-left,
+.main-up-middle,
+.main-up-right {
+    float: left;
+    margin-right: 5%;
+}
+
+.main-up-left {
+    width: 20%;
+    height: 500px;
+    background: #ccc;
+    box-sizing: border-box;
+}
+
+.main-up-middle,
+.main-up-right {
+    width: 35%;
+    height: 500px;
+    background: #ccc;
+    box-sizing: border-box;
+}
+
+.main-up-right {
+    margin-right: 0;
+}
+
+.main-buttom {
+    width: 80%;
+    height: 430px;
+    background: #ccc;
+    margin: 30px auto;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #ED1E79;
+}
+
+/*
+*	
+*  响应式
+*  device-width<768px 小型设备
+*  768px<w<1200px 平板
+*  >1200px电脑
+*
+*/
+
+@media screen and (max-width: 768px) {
+    body:after {
+        content: 'small';
+    }
+    .header-content .nav {
+        float: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+    .header-content .nav ul li {
+        width: 100%;
+        float: none;
+        color: #eeeeee;
+        line-height: 20px;
+        background: #666;
+        border: 1px dotted #ccc;
+    }
+    .header-content #btn1 {
+        display: block;
+        position: absolute;
+        left: 83%;
+        top: 13px;
+    }
+    .header-content #btn1 img {
+        border-radius: 3px;
+    }
+    .main-up {
+        width: 100%;
+    }
+    .main-up-left,
+    .main-up-middle,
+    .main-up-right {
+        float: none;
+        width: 80%;
+        height: 500px;
+        background: #ccc;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .main-up-left,
+    .main-up-middle,
+    .main-up-right {
+        margin: 60px auto 0;
+    }
+    .main-buttom {
+        width: 80%;
+        height: 300px;
+        background: #ccc;
+        margin: 60px auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px)and(max-width: 1200px) {
+    .main-up>.main-up-left {
+        display: none;
+    }
+    .main-up>.main-up-middle {
+        margin: 0 10% 0 0;
+        width: 45%;
+    }
+    .main-up>.main-up-right {
+        width: 45%;
+    }
+}
