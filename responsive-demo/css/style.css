@@ -1,10 +1,12 @@
 @charset "UTF-8";
 /**
  * 
- * @authors Your Name (you@example.org)
- * @date    2018-01-14 14:56:40
- * @version $Id$
+ * @authors Jomsou
+ * @date    2018-02-12 14:56:40
+ * @version 1.0.0
  */
+
+/* 重置浏览器默认样式 */
 
 * {
     margin: 0;
@@ -14,12 +16,14 @@
 body {
     color: #333;
 }
-
+/* 为了后面的js判断设备时使用 */
 body:after {
     content: '';
     display: none;
 }
-
+.width {
+    width: 80%;
+}
 a {
     text-decoration: none;
     font-size: 20px;
@@ -31,101 +35,97 @@ a {
 li {
     list-style-type: none;
 }
-
+/* 清除浮动 */
 .clearfix {
     *zoom: 1;
 }
 
 .clearfix:after {
     content: '';
-    display: table;
-    clear: both;
-    line-height: 0;
+    display: table; /* 触发BFC */
+    clear: both; /* 清除浮动 */
+    height: 0;
 }
-
+/* 头部 */
 .header {
     width: 100%;
     height: 56px;
     background: #ED1E79;
     position: relative;
 }
-
+/* 头部内容 */
 .header-content {
     margin: 0 auto;
-    width: 80%;
 }
-
-.header-content .logo {
+/* 头部logo */
+.header-content>.logo {
     width: 20%;
     color: #eeeeee;
     font-size: 20px;
     line-height: 56px;
     float: left;
 }
-
-.header-content .nav {
-    width: 80%;
+/* 头部导航栏 */
+.header-content>.nav {
     height: 56px;
     float: left;
 }
 
-.header-content .nav ul li {
+.header-content>.nav>ul>li {
     width: 20%;
     float: left;
     color: #eeeeee;
     line-height: 56px;
 }
-
-.header-content #btn1 {
+/* 响应式菜单栏按钮 */
+.header-content>#btn1 {
     display: none;
 }
-
+/* 隐藏属性 */
 .header-content>.hide {
     display: none;
 }
-
+/* 中间 */
 .main {
     width: 100%;
 }
-
+/* 中间上半部分 */
 .main-up {
-    width: 80%;
+    height: 430px;
+    background: #ccc;
+    margin: 30px auto;
+}
+/* 中间下半部分 */
+.main-buttom {
     margin: 60px auto;
 }
 
-.main-up-left,
-.main-up-middle,
-.main-up-right {
+.main-buttom-left,
+.main-buttom-middle,
+.main-buttom-right {
     float: left;
     margin-right: 5%;
 }
 
-.main-up-left {
+.main-buttom-left {
     width: 20%;
     height: 500px;
     background: #ccc;
     box-sizing: border-box;
 }
 
-.main-up-middle,
-.main-up-right {
+.main-buttom-middle,
+.main-buttom-right {
     width: 35%;
     height: 500px;
     background: #ccc;
     box-sizing: border-box;
 }
 
-.main-up-right {
+.main-buttom-right {
     margin-right: 0;
 }
-
-.main-buttom {
-    width: 80%;
-    height: 430px;
-    background: #ccc;
-    margin: 30px auto;
-}
-
+/* 底部 */
 .footer {
     width: 100%;
     height: 50px;
@@ -143,16 +143,17 @@ li {
 
 @media screen and (max-width: 768px) {
     body:after {
+        /* 为后面判断设备做准备 */
         content: 'small';
     }
-    .header-content .nav {
+    .header-content>.nav {
         float: none;
         position: absolute;
         width: 100%;
         top: 100%;
         left: 0;
     }
-    .header-content .nav ul li {
+    .header-content>.nav>ul>li {
         width: 100%;
         float: none;
         color: #eeeeee;
@@ -160,21 +161,28 @@ li {
         background: #666;
         border: 1px dotted #ccc;
     }
-    .header-content #btn1 {
+    .header-content>#btn1 {
         display: block;
         position: absolute;
         left: 83%;
         top: 13px;
     }
-    .header-content #btn1 img {
+    .header-content>#btn1>img {
         border-radius: 3px;
     }
     .main-up {
+        width: 80%;
+        height: 300px;
+        background: #ccc;
+        margin: 60px auto;
+        margin-top: 20px;
+    }
+    .main-buttom {
         width: 100%;
     }
-    .main-up-left,
-    .main-up-middle,
-    .main-up-right {
+    .main-buttom-left,
+    .main-buttom-middle,
+    .main-buttom-right {
         float: none;
         width: 80%;
         height: 500px;
@@ -182,29 +190,22 @@ li {
         box-sizing: border-box;
         margin: 0 auto;
     }
-    .main-up-left,
-    .main-up-middle,
-    .main-up-right {
+    .main-buttom-left,
+    .main-buttom-middle,
+    .main-buttom-right {
         margin: 60px auto 0;
-    }
-    .main-buttom {
-        width: 80%;
-        height: 300px;
-        background: #ccc;
-        margin: 60px auto;
-        margin-top: 20px;
     }
 }
 
 @media screen and (min-width: 768px)and(max-width: 1200px) {
-    .main-up>.main-up-left {
+    .main-buttom>.main-buttom-left {
         display: none;
     }
-    .main-up>.main-up-middle {
+    .main-buttom>.main-buttom-middle {
         margin: 0 10% 0 0;
         width: 45%;
     }
-    .main-up>.main-up-right {
+    .main-buttom>.main-buttom-right {
         width: 45%;
     }
 }
