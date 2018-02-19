@@ -1,0 +1,86 @@
+ #div1 div {
+     width: 200px;
+     height: 200px;
+     border: 1px solid #ccc;
+     display: none;
+ }
+
+ .active {
+     background: orange;
+ }
+ * {
+     margin: 0;
+     padding: 0;
+     border-width: 0;
+     font-family: 微软雅黑;
+ }
+
+ /*幻灯片*/
+
+ #main #img_box {
+     height: 400px;
+     width: 100%;
+     background: #ccc;
+     overflow: hidden;
+ }
+
+ #main #img_box #plays {
+     width: 1020px;
+     height: 400px;
+     margin: 0 auto;
+     position: relative;
+ }
+
+ #main #img_box #plays ul {
+     width: 13260px;
+     height: 400px;
+     position: absolute;
+     left: -2040px;
+     overflow: hidden;
+ }
+
+ #main #img_box #plays ul li {
+     float: left;
+ }
+
+ #main #img_box #plays #plays_left {
+     width: 1020px;
+     height: 400px;
+     position: absolute;
+     top: 0;
+     left: -1020px;
+     opacity: 0.6;
+     filter: alpha(opacity=60);
+     z-index: 997;
+     background-color: #fff;
+ }
+
+ #main #img_box #plays #plays_right {
+     width: 1020px;
+     height: 400px;
+     position: absolute;
+     top: 0;
+     right: -1020px;
+     opacity: 0.6;
+     filter: alpha(opacity=60);
+     z-index: 997;
+     background-color: #fff;
+ }
+
+ #main #img_box #plays #p_prev {
+     position: absolute;
+     top: 50%;
+     left: 0;
+     background: url(../images/left.png) no-repeat;
+     height: 45px;
+     width: 46px;
+ }
+
+ #main #img_box #plays #p_next {
+     position: absolute;
+     top: 50%;
+     right: 0;
+     background: url(../images/right.png) no-repeat;
+     height: 45px;
+     width: 46px;
+ }

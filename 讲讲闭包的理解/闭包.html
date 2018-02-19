@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function makeAdder(x) {
+            function add(y){
+                return x + y ;
+            };
+
+            return add;
+        }
+
+        var plusOne = makeAdder(1);
+        console.log(plusOne(3));
+    </script>
+</body>
+</html>
