@@ -99,7 +99,7 @@ Little.prototype = {
         obj.timer = setInterval(moveTo, 30);
     },
     /*------------------------ajax.js--------------------------*/
-    ajax: function ajax(method, url, data, success) {
+    ajax: function (method, url, data, success) {
         //1.创建服务
         var xhr = null;
         try {

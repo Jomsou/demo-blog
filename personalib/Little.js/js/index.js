@@ -73,4 +73,8 @@ window.onload = function () {
     });
     //自动播放幻灯片
     setInterval(autoPlay, 5000);
+    //ajax test
+    ex.ajax('post', 'data/test.json', new Date(), function (str) {
+        console.log(str);
+    })
 }

@@ -89,36 +89,34 @@
             }, 30);
         },
         /*------------------------ajax.js--------------------------*/
-        ajax: (method, url, success, fnFaild) => {
-            //1.创建Ajax对象
+        ajax: (method, url, data, success) => {
+            //1.创建服务
             var xhr = null;
             try {
                 xhr = new XMLHttpRequest();
             } catch (error) {
-                xhr = new ActiveXObjecttive('Microsoft.XMLHTTP');
+                xhr = new ActiveXObject('Microsoft.XMLHTTP');
             }
+            //2.判断提交方法，get方法url数据处理
             if (method == 'get' && data) {
                 url += '?' + data;
             }
-            //2.连接服务器（打开和服务器的连接）
+            //3.打开服务
             xhr.open(method, url, true);
-            //3.发送
+            //4.发送服务
             if (method == 'get') {
                 xhr.send();
             } else {
-                //设置头部
-                xhr.setRequstHeader('content-type:application/x-www-form-urlencoded');
-                xhr.send();
+                xhr.setRequestHeader('content-type', 'appliction/x-www-form-urlencoded');
+                xhr.send(data);
             }
-            //4.接收
+            //5.接收响应
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {
                     if (xhr.status == 200) {
-                        success(xhr.responText);
+                        success && success(xhr.responseText);
                     } else {
-                        if (fnFaild) {
-                            fnFaild();
-                        }
+                        alert(xhr.status);
                     }
                 }
             }
