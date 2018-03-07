@@ -17,8 +17,8 @@
 
 [我叫浮动，我想讲讲我的故事](https://github.com/Jomsou/demo-blog/issues/05)
 
-[圣杯布局和双飞翼布局]()
+[圣杯布局和双飞翼布局](https://github.com/Jomsou/demo-blog/issues/04)
 
-[以运动框架写个轮播图]()
+[以运动框架写个轮播图](https://github.com/Jomsou/demo-blog/issues/02)
 
 [以选项卡的故事扯扯js面向对象](https://github.com/Jomsou/demo-blog/issues/01)
