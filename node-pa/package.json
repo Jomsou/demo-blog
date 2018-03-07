@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "gbk": "^0.1.0",
+    "jsdom": "^11.6.2"
+  }
+}
