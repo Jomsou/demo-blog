@@ -2,9 +2,9 @@
 自己写的demo博客集合
 ## 2018年03月
 
-[](https://github.com/Jomsou/demo-blog/issues/13)
+[用css变量使得维护更加便捷](https://github.com/Jomsou/demo-blog/issues/13)
 
-[](https://github.com/Jomsou/demo-blog/issues/12)
+[用Node写个简单爬虫抓取页面内容](https://github.com/Jomsou/demo-blog/issues/12)
 
 [写写cookie和session](https://github.com/Jomsou/demo-blog/issues/11)
 
