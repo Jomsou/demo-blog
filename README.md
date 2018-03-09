@@ -2,6 +2,10 @@
 自己写的demo博客集合
 ## 2018年03月
 
+[](https://github.com/Jomsou/demo-blog/issues/13)
+
+[](https://github.com/Jomsou/demo-blog/issues/12)
+
 [写写cookie和session](https://github.com/Jomsou/demo-blog/issues/11)
 
 ## 2018年02月
