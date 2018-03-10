@@ -2,6 +2,8 @@
 自己写的demo博客集合
 ## 2018年03月
 
+[js的错误积累](https://github.com/Jomsou/demo-blog/issues/14)
+
 [用css变量使得维护更加便捷](https://github.com/Jomsou/demo-blog/issues/13)
 
 [用Node写个简单爬虫抓取页面内容](https://github.com/Jomsou/demo-blog/issues/12)
