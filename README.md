@@ -1,6 +1,7 @@
 # Jomsou's demo-blog
 自己写的demo博客集合
 ## 2018年03月
+[用css画三角形](https://github.com/Jomsou/demo-blog/issues/15)
 
 [js的错误积累](https://github.com/Jomsou/demo-blog/issues/14)
 
