@@ -1,0 +1,24 @@
+/* 
+*  This is smallBoostrap!
+*  Date: 2018.3.8 22:32
+*/
+/* clear */
+.clearfix {
+    *zoom: 1
+};
+.clearfix:before,
+.clearfix:after {
+    /* BFC */
+    display: table;
+    content: '';
+    height: 0;
+    clear: both;
+}
+.hide-text {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+    background: transparent;
+    border: 0;
+}
+
