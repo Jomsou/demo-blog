@@ -1,5 +1,14 @@
-# Jomsou's demo-blog
-自己写的demo博客集合
+<p align="center">
+  <a href="https:///github.com/Jomsou/demo-blog">
+  <img width="202" alt="creeperyang's blog" src="https://cloud.githubusercontent.com/assets/8046480/14981004/d3108ee0-115e-11e6-8f35-b4320b214947.png">
+  </a>
+</p>
+
+<p align="center">
+<a href="https:///github.com/Jomsou/demo-blog/issues"><b>所有文章</b></a>
+</p>
+
+<br/>
 ## 2018年03月
 [从事件绑定聊到事件监听，再到事件委托](https://github.com/Jomsou/demo-blog/issues/16)
 
