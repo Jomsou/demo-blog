@@ -1,6 +1,8 @@
 # Jomsou's demo-blog
 自己写的demo博客集合
 ## 2018年03月
+[从事件绑定聊到事件监听，再到事件委托](https://github.com/Jomsou/demo-blog/issues/16)
+
 [用css画三角形](https://github.com/Jomsou/demo-blog/issues/15)
 
 [js的错误积累](https://github.com/Jomsou/demo-blog/issues/14)
