@@ -14,7 +14,9 @@
   
 ## 2018年04月
 
-[关于var、let、const的故事](https://github.com/Jomsou/demo-blog/issues/17)
+[关于var、let、const的故事](https://github.com/Jomsou/demo-blog/issues/18)
+
+[小程序的基本架构](https://github.com/Jomsou/demo-blog/issues/17)
 
 ## 2018年03月
 
